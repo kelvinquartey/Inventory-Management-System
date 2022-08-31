@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductModule));
+            this.labelProdID = new System.Windows.Forms.Label();
             this.comboQty = new System.Windows.Forms.ComboBox();
             this.txtBoxDesc = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,54 +48,64 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtBoxPname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.labelProdID = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopriteLogo)).BeginInit();
             this.SuspendLayout();
+            // 
+            // labelProdID
+            // 
+            this.labelProdID.AutoSize = true;
+            this.labelProdID.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelProdID.Location = new System.Drawing.Point(82, 406);
+            this.labelProdID.Name = "labelProdID";
+            this.labelProdID.Size = new System.Drawing.Size(97, 24);
+            this.labelProdID.TabIndex = 81;
+            this.labelProdID.Text = "Product Id";
+            this.labelProdID.Visible = false;
             // 
             // comboQty
             // 
             this.comboQty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboQty.FormattingEnabled = true;
-            this.comboQty.Location = new System.Drawing.Point(256, 307);
+            this.comboQty.Location = new System.Drawing.Point(256, 316);
             this.comboQty.Name = "comboQty";
             this.comboQty.Size = new System.Drawing.Size(394, 28);
-            this.comboQty.TabIndex = 65;
+            this.comboQty.TabIndex = 80;
             // 
             // txtBoxDesc
             // 
-            this.txtBoxDesc.Location = new System.Drawing.Point(256, 264);
+            this.txtBoxDesc.Location = new System.Drawing.Point(256, 273);
             this.txtBoxDesc.Name = "txtBoxDesc";
             this.txtBoxDesc.Size = new System.Drawing.Size(394, 26);
-            this.txtBoxDesc.TabIndex = 64;
+            this.txtBoxDesc.TabIndex = 79;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(112, 261);
+            this.label6.Location = new System.Drawing.Point(112, 270);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(106, 24);
-            this.label6.TabIndex = 63;
+            this.label6.TabIndex = 78;
             this.label6.Text = "Description";
             // 
             // btnSave
             // 
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(393, 386);
+            this.btnSave.Location = new System.Drawing.Point(393, 395);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 105);
-            this.btnSave.TabIndex = 62;
+            this.btnSave.TabIndex = 77;
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
-            this.btnUpdate.Location = new System.Drawing.Point(238, 386);
+            this.btnUpdate.Location = new System.Drawing.Point(238, 395);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(109, 105);
-            this.btnUpdate.TabIndex = 61;
+            this.btnUpdate.TabIndex = 76;
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -103,10 +114,10 @@
             this.btnClear.BackColor = System.Drawing.Color.Red;
             this.btnClear.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(564, 356);
+            this.btnClear.Location = new System.Drawing.Point(564, 365);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(86, 42);
-            this.btnClear.TabIndex = 60;
+            this.btnClear.TabIndex = 75;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -122,7 +133,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(712, 105);
-            this.panel2.TabIndex = 59;
+            this.panel2.TabIndex = 74;
             // 
             // label5
             // 
@@ -135,7 +146,7 @@
             this.label5.Size = new System.Drawing.Size(34, 32);
             this.label5.TabIndex = 7;
             this.label5.Text = "X";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
             // labelClose
             // 
@@ -174,73 +185,62 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(128, 307);
+            this.label4.Location = new System.Drawing.Point(128, 316);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 24);
-            this.label4.TabIndex = 58;
+            this.label4.TabIndex = 73;
             this.label4.Text = "Category:";
             // 
             // txtBoxPrice
             // 
-            this.txtBoxPrice.Location = new System.Drawing.Point(256, 220);
+            this.txtBoxPrice.Location = new System.Drawing.Point(256, 229);
             this.txtBoxPrice.Name = "txtBoxPrice";
             this.txtBoxPrice.Size = new System.Drawing.Size(394, 26);
-            this.txtBoxPrice.TabIndex = 57;
+            this.txtBoxPrice.TabIndex = 72;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(161, 221);
+            this.label3.Location = new System.Drawing.Point(161, 230);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 24);
-            this.label3.TabIndex = 56;
+            this.label3.TabIndex = 71;
             this.label3.Text = "Price:";
             // 
             // txtBoxQty
             // 
-            this.txtBoxQty.Location = new System.Drawing.Point(256, 176);
+            this.txtBoxQty.Location = new System.Drawing.Point(256, 185);
             this.txtBoxQty.Name = "txtBoxQty";
             this.txtBoxQty.Size = new System.Drawing.Size(394, 26);
-            this.txtBoxQty.TabIndex = 55;
+            this.txtBoxQty.TabIndex = 70;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(128, 178);
+            this.label2.Location = new System.Drawing.Point(128, 187);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 24);
-            this.label2.TabIndex = 54;
+            this.label2.TabIndex = 69;
             this.label2.Text = "Quantity:";
             // 
             // txtBoxPname
             // 
-            this.txtBoxPname.Location = new System.Drawing.Point(256, 132);
+            this.txtBoxPname.Location = new System.Drawing.Point(256, 141);
             this.txtBoxPname.Name = "txtBoxPname";
             this.txtBoxPname.Size = new System.Drawing.Size(394, 26);
-            this.txtBoxPname.TabIndex = 53;
+            this.txtBoxPname.TabIndex = 68;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(82, 135);
+            this.label1.Location = new System.Drawing.Point(82, 144);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 24);
-            this.label1.TabIndex = 52;
+            this.label1.TabIndex = 67;
             this.label1.Text = "Product Name:";
-            // 
-            // labelProdID
-            // 
-            this.labelProdID.AutoSize = true;
-            this.labelProdID.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProdID.Location = new System.Drawing.Point(82, 397);
-            this.labelProdID.Name = "labelProdID";
-            this.labelProdID.Size = new System.Drawing.Size(97, 24);
-            this.labelProdID.TabIndex = 66;
-            this.labelProdID.Text = "Product Id";
-            this.labelProdID.Visible = false;
             // 
             // ProductModule
             // 
@@ -276,6 +276,7 @@
 
         #endregion
 
+        public System.Windows.Forms.Label labelProdID;
         public System.Windows.Forms.ComboBox comboQty;
         public System.Windows.Forms.TextBox txtBoxDesc;
         private System.Windows.Forms.Label label6;
@@ -294,6 +295,5 @@
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtBoxPname;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Label labelProdID;
     }
 }

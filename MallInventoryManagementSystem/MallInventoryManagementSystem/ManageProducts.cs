@@ -35,32 +35,7 @@ namespace MallInventoryManagementSystem
         public ManageProducts()
         {
             InitializeComponent();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnAddUsers_Click(object sender, EventArgs e)
-        {
-            ProductModule formModule = new ProductModule();
-            formModule.btnSave.Enabled = true;
-            formModule.btnUpdate.Enabled = false;
-            formModule.ShowDialog();
             LoadProduct();
-        }
-
-        private void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-            LoadProduct();
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AdminHome af = new AdminHome();
-            af.Show();
         }
 
         private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -92,6 +67,32 @@ namespace MallInventoryManagementSystem
                 }
             }
             LoadProduct();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminHome af = new AdminHome();
+            af.Show();
+        }
+
+        private void txtSearch_TextChanged_1(object sender, EventArgs e)
+        {
+            LoadProduct();
+        }
+
+        private void btnAddUsers_Click(object sender, EventArgs e)
+        {
+            ProductModule formModule = new ProductModule();
+            formModule.btnSave.Enabled = true;
+            formModule.btnUpdate.Enabled = false;
+            formModule.ShowDialog();
+            LoadProduct();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

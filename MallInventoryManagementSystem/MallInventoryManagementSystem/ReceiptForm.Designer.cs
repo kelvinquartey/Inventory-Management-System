@@ -40,6 +40,8 @@
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnPrint = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReceipt)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,12 +58,12 @@
             this.Column4,
             this.Column5,
             this.Delete});
-            this.dgvReceipt.Location = new System.Drawing.Point(46, 27);
+            this.dgvReceipt.Location = new System.Drawing.Point(47, 38);
             this.dgvReceipt.Name = "dgvReceipt";
             this.dgvReceipt.RowHeadersWidth = 62;
             this.dgvReceipt.RowTemplate.Height = 28;
             this.dgvReceipt.Size = new System.Drawing.Size(856, 357);
-            this.dgvReceipt.TabIndex = 0;
+            this.dgvReceipt.TabIndex = 51;
             this.dgvReceipt.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReceipt_CellContentClick);
             // 
             // Column7
@@ -123,23 +125,36 @@
             // btnPrint
             // 
             this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
-            this.btnPrint.Location = new System.Drawing.Point(801, 416);
+            this.btnPrint.Location = new System.Drawing.Point(802, 427);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(101, 88);
-            this.btnPrint.TabIndex = 49;
+            this.btnPrint.TabIndex = 52;
             this.toolTip1.SetToolTip(this.btnPrint, "Print Receipt");
             this.btnPrint.UseVisualStyleBackColor = true;
-            this.btnPrint.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.Location = new System.Drawing.Point(47, 436);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(101, 88);
+            this.btnBack.TabIndex = 53;
+            this.toolTip2.SetToolTip(this.btnBack, "Back");
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // ReceiptForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 563);
-            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.dgvReceipt);
+            this.Controls.Add(this.btnPrint);
+            this.Controls.Add(this.btnBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReceiptForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReceiptForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvReceipt)).EndInit();
             this.ResumeLayout(false);
@@ -158,5 +173,7 @@
         private System.Windows.Forms.DataGridViewImageColumn Delete;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.ToolTip toolTip2;
     }
 }

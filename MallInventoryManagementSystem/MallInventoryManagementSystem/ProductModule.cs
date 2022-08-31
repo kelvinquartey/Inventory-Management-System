@@ -36,34 +36,29 @@ namespace MallInventoryManagementSystem
             dr.Close();
             con.Close();
         }
-        private void label5_Click(object sender, EventArgs e)
+           
+
+        public void Clear()
+        {
+            txtBoxPname.Clear();
+            txtBoxQty.Clear();
+            txtBoxPrice.Clear();
+            txtBoxDesc.Clear();
+            comboQty.Text = "";
+        }
+
+        
+
+        private void label5_Click_1(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnClear_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (MessageBox.Show("Are you sure you want to Edit this Product?", "Saving Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    SqlCommand cm = new SqlCommand("UPDATE ProductTb SET pname=@pname,pqty=@pqty,pprice=@pprice, pdescription=@pdescription,pcategory=@pcategory WHERE  pid LIKE '" + labelProdID.Text + "'", con);
-                    cm.Parameters.AddWithValue("@pname", txtBoxPname.Text);
-                    cm.Parameters.AddWithValue("@pqty", Convert.ToInt16(txtBoxQty.Text));
-                    cm.Parameters.AddWithValue("@pprice", Convert.ToInt16(txtBoxPrice.Text));
-                    cm.Parameters.AddWithValue("@pdescription", txtBoxDesc.Text);
-                    cm.Parameters.AddWithValue("@pcategory", comboQty.Text);
-                    con.Open();
-                    cm.ExecuteNonQuery();
-                    con.Close();
-                    MessageBox.Show("Product has been successfully Updated");
-                    this.Dispose();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            Clear();
+            btnSave.Enabled = true;
+            btnUpdate.Enabled = false;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -91,20 +86,29 @@ namespace MallInventoryManagementSystem
             }
         }
 
-        public void Clear()
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
-            txtBoxPname.Clear();
-            txtBoxQty.Clear();
-            txtBoxPrice.Clear();
-            txtBoxDesc.Clear();
-            comboQty.Text = "";
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            Clear();
-            btnSave.Enabled = true;
-            btnUpdate.Enabled = false;
+            try
+            {
+                if (MessageBox.Show("Are you sure you want to Edit this Product?", "Saving Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    SqlCommand cm = new SqlCommand("UPDATE ProductTb SET pname=@pname,pqty=@pqty,pprice=@pprice, pdescription=@pdescription,pcategory=@pcategory WHERE  pid LIKE '" + labelProdID.Text + "'", con);
+                    cm.Parameters.AddWithValue("@pname", txtBoxPname.Text);
+                    cm.Parameters.AddWithValue("@pqty", Convert.ToInt16(txtBoxQty.Text));
+                    cm.Parameters.AddWithValue("@pprice", Convert.ToInt16(txtBoxPrice.Text));
+                    cm.Parameters.AddWithValue("@pdescription", txtBoxDesc.Text);
+                    cm.Parameters.AddWithValue("@pcategory", comboQty.Text);
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Product has been successfully Updated");
+                    this.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

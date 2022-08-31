@@ -13,7 +13,6 @@ namespace MallInventoryManagementSystem
 {
     public partial class LoginForm : Form
     {
-
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\NII\Documents\dbMS.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
@@ -21,11 +20,6 @@ namespace MallInventoryManagementSystem
         public LoginForm()
         {
             InitializeComponent();
-        }
-
-        private void textBoxUsername_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -36,7 +30,6 @@ namespace MallInventoryManagementSystem
 
         private void checkBoxShowPassword_CheckedChanged(object sender, EventArgs e)
         {
-
             if (checkBoxShowPassword.Checked == true)
             {
                 textBoxPassword.UseSystemPasswordChar = false;

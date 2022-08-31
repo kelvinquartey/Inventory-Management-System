@@ -1,22 +1,22 @@
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\bin\Debug\MallInventoryManagementSystem.exe.config
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\bin\Debug\MallInventoryManagementSystem.exe
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\bin\Debug\MallInventoryManagementSystem.pdb
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.csproj.AssemblyReference.cache
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.csproj.SuggestedBindingRedirects.cache
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.LoginForm.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.WelcomForm.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.Properties.Resources.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.csproj.GenerateResource.cache
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.csproj.CoreCompileInputs.cache
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.exe
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.pdb
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.AdminHome.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.CategoryModule.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ManageCategories.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ManageProducts.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ManageUsers.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ProductCategoryOption.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ProductModule.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.UserModule.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.AttendantHome.resources
-C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.SalesForm.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.csproj.AssemblyReference.cache
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.AdminHome.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.LoginForm.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ManageUsers.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.Properties.Resources.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.UserModule.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.csproj.GenerateResource.cache
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\bin\Debug\MallInventoryManagementSystem.exe.config
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\bin\Debug\MallInventoryManagementSystem.exe
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\bin\Debug\MallInventoryManagementSystem.pdb
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.exe
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.pdb
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.AttendantHome.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.CategoryModule.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ManageCategories.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ManageProducts.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ProductCategoryOption.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ProductModule.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ReceiptForm.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.SalesForm.resources

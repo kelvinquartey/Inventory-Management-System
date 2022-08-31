@@ -45,50 +45,50 @@
             this.labelClose.BackColor = System.Drawing.Color.DarkRed;
             this.labelClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelClose.ForeColor = System.Drawing.Color.White;
-            this.labelClose.Location = new System.Drawing.Point(392, -1);
+            this.labelClose.Location = new System.Drawing.Point(391, -2);
             this.labelClose.Name = "labelClose";
             this.labelClose.Size = new System.Drawing.Size(34, 32);
-            this.labelClose.TabIndex = 26;
+            this.labelClose.TabIndex = 33;
             this.labelClose.Text = "X";
-            this.labelClose.Click += new System.EventHandler(this.labelClose_Click);
+            this.labelClose.Click += new System.EventHandler(this.labelClose_Click_1);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(235, 370);
+            this.label2.Location = new System.Drawing.Point(234, 369);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 25);
-            this.label2.TabIndex = 25;
+            this.label2.TabIndex = 32;
             this.label2.Text = "PRODUCTS";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 370);
+            this.label1.Location = new System.Drawing.Point(46, 369);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 25);
-            this.label1.TabIndex = 24;
+            this.label1.TabIndex = 31;
             this.label1.Text = "CATEGORIES";
             // 
             // buttonProducts
             // 
             this.buttonProducts.Image = ((System.Drawing.Image)(resources.GetObject("buttonProducts.Image")));
-            this.buttonProducts.Location = new System.Drawing.Point(240, 247);
+            this.buttonProducts.Location = new System.Drawing.Point(239, 246);
             this.buttonProducts.Name = "buttonProducts";
             this.buttonProducts.Size = new System.Drawing.Size(119, 103);
-            this.buttonProducts.TabIndex = 23;
+            this.buttonProducts.TabIndex = 30;
             this.buttonProducts.UseVisualStyleBackColor = true;
-            this.buttonProducts.Click += new System.EventHandler(this.buttonProducts_Click);
+            this.buttonProducts.Click += new System.EventHandler(this.buttonProducts_Click_1);
             // 
             // buttonCategories
             // 
             this.buttonCategories.Image = ((System.Drawing.Image)(resources.GetObject("buttonCategories.Image")));
-            this.buttonCategories.Location = new System.Drawing.Point(60, 247);
+            this.buttonCategories.Location = new System.Drawing.Point(59, 246);
             this.buttonCategories.Name = "buttonCategories";
             this.buttonCategories.Size = new System.Drawing.Size(119, 103);
-            this.buttonCategories.TabIndex = 22;
+            this.buttonCategories.TabIndex = 29;
             this.buttonCategories.UseVisualStyleBackColor = true;
             this.buttonCategories.Click += new System.EventHandler(this.buttonCategories_Click);
             // 
@@ -97,20 +97,20 @@
             this.labelInvent.AutoSize = true;
             this.labelInvent.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelInvent.ForeColor = System.Drawing.Color.Red;
-            this.labelInvent.Location = new System.Drawing.Point(19, 102);
+            this.labelInvent.Location = new System.Drawing.Point(18, 101);
             this.labelInvent.Name = "labelInvent";
             this.labelInvent.Size = new System.Drawing.Size(374, 29);
-            this.labelInvent.TabIndex = 21;
+            this.labelInvent.TabIndex = 28;
             this.labelInvent.Text = "INVENTORY MANAGEMENT SYSTEM";
             // 
             // pictureBoxShopriteLogo
             // 
             this.pictureBoxShopriteLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBoxShopriteLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxShopriteLogo.Image")));
-            this.pictureBoxShopriteLogo.Location = new System.Drawing.Point(161, 13);
+            this.pictureBoxShopriteLogo.Location = new System.Drawing.Point(160, 12);
             this.pictureBoxShopriteLogo.Name = "pictureBoxShopriteLogo";
             this.pictureBoxShopriteLogo.Size = new System.Drawing.Size(88, 86);
-            this.pictureBoxShopriteLogo.TabIndex = 20;
+            this.pictureBoxShopriteLogo.TabIndex = 27;
             this.pictureBoxShopriteLogo.TabStop = false;
             // 
             // ProductCategoryOption

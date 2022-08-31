@@ -17,25 +17,27 @@ namespace MallInventoryManagementSystem
             InitializeComponent();
         }
 
-        private void labelClose_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AdminHome adminForm = new AdminHome();
-            adminForm.ShowDialog();
-        }
+       
 
-        private void buttonProducts_Click(object sender, EventArgs e)
+        private void buttonProducts_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            ManageProducts pf = new ManageProducts();
-            pf.ShowDialog();
+            ManageCategories fm = new ManageCategories();
+            fm.ShowDialog();
         }
 
         private void buttonCategories_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ManageCategories fm = new ManageCategories();
-            fm.ShowDialog();
+            ManageCategories manageCategories = new ManageCategories();
+            manageCategories.ShowDialog();
+        }
+
+        private void labelClose_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminHome adminForm = new AdminHome();
+            adminForm.ShowDialog();
         }
     }
 }

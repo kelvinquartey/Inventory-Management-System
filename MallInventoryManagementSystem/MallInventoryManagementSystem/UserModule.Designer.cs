@@ -53,54 +53,54 @@
             // 
             // txtBoxCpword
             // 
-            this.txtBoxCpword.Location = new System.Drawing.Point(256, 274);
+            this.txtBoxCpword.Location = new System.Drawing.Point(256, 278);
             this.txtBoxCpword.Name = "txtBoxCpword";
             this.txtBoxCpword.Size = new System.Drawing.Size(394, 26);
-            this.txtBoxCpword.TabIndex = 50;
+            this.txtBoxCpword.TabIndex = 64;
             this.txtBoxCpword.UseSystemPasswordChar = true;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(42, 274);
+            this.label6.Location = new System.Drawing.Point(42, 278);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(169, 24);
-            this.label6.TabIndex = 49;
+            this.label6.TabIndex = 63;
             this.label6.Text = "Confirm Password:";
             // 
             // btnSave
             // 
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(393, 396);
+            this.btnSave.Location = new System.Drawing.Point(393, 400);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 105);
-            this.btnSave.TabIndex = 48;
+            this.btnSave.TabIndex = 62;
             this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // btnUpdate
             // 
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
-            this.btnUpdate.Location = new System.Drawing.Point(238, 396);
+            this.btnUpdate.Location = new System.Drawing.Point(238, 400);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(109, 105);
-            this.btnUpdate.TabIndex = 47;
+            this.btnUpdate.TabIndex = 61;
             this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
             // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.Red;
             this.btnClear.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(564, 366);
+            this.btnClear.Location = new System.Drawing.Point(564, 370);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(86, 42);
-            this.btnClear.TabIndex = 46;
+            this.btnClear.TabIndex = 60;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click_1);
             // 
             // panel2
             // 
@@ -113,7 +113,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(712, 105);
-            this.panel2.TabIndex = 45;
+            this.panel2.TabIndex = 59;
             // 
             // label5
             // 
@@ -126,7 +126,7 @@
             this.label5.Size = new System.Drawing.Size(34, 32);
             this.label5.TabIndex = 7;
             this.label5.Text = "X";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
             // labelClose
             // 
@@ -163,71 +163,71 @@
             // 
             // txtBoxPhone
             // 
-            this.txtBoxPhone.Location = new System.Drawing.Point(256, 318);
+            this.txtBoxPhone.Location = new System.Drawing.Point(256, 322);
             this.txtBoxPhone.Name = "txtBoxPhone";
             this.txtBoxPhone.Size = new System.Drawing.Size(394, 26);
-            this.txtBoxPhone.TabIndex = 44;
+            this.txtBoxPhone.TabIndex = 58;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(141, 320);
+            this.label4.Location = new System.Drawing.Point(141, 324);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 24);
-            this.label4.TabIndex = 43;
+            this.label4.TabIndex = 57;
             this.label4.Text = "Phone:";
             // 
             // txtBoxPword
             // 
-            this.txtBoxPword.Location = new System.Drawing.Point(256, 230);
+            this.txtBoxPword.Location = new System.Drawing.Point(256, 234);
             this.txtBoxPword.Name = "txtBoxPword";
             this.txtBoxPword.Size = new System.Drawing.Size(394, 26);
-            this.txtBoxPword.TabIndex = 42;
+            this.txtBoxPword.TabIndex = 56;
             this.txtBoxPword.UseSystemPasswordChar = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(114, 234);
+            this.label3.Location = new System.Drawing.Point(114, 238);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 24);
-            this.label3.TabIndex = 41;
+            this.label3.TabIndex = 55;
             this.label3.Text = "Password:";
             // 
             // txtBoxFname
             // 
-            this.txtBoxFname.Location = new System.Drawing.Point(256, 186);
+            this.txtBoxFname.Location = new System.Drawing.Point(256, 190);
             this.txtBoxFname.Name = "txtBoxFname";
             this.txtBoxFname.Size = new System.Drawing.Size(394, 26);
-            this.txtBoxFname.TabIndex = 40;
+            this.txtBoxFname.TabIndex = 54;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(118, 191);
+            this.label2.Location = new System.Drawing.Point(118, 195);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 24);
-            this.label2.TabIndex = 39;
+            this.label2.TabIndex = 53;
             this.label2.Text = "Fullname:";
             // 
             // txtBoxUname
             // 
-            this.txtBoxUname.Location = new System.Drawing.Point(256, 142);
+            this.txtBoxUname.Location = new System.Drawing.Point(256, 146);
             this.txtBoxUname.Name = "txtBoxUname";
             this.txtBoxUname.Size = new System.Drawing.Size(394, 26);
-            this.txtBoxUname.TabIndex = 38;
+            this.txtBoxUname.TabIndex = 52;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(110, 148);
+            this.label1.Location = new System.Drawing.Point(110, 152);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 24);
-            this.label1.TabIndex = 37;
+            this.label1.TabIndex = 51;
             this.label1.Text = "Username:";
             // 
             // UserModule
@@ -251,8 +251,8 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserModule";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserModule";
-            this.Load += new System.EventHandler(this.UserModule_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopriteLogo)).EndInit();

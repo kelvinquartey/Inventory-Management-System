@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageUsers));
-            this.btnClear = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAddUsers = new System.Windows.Forms.Button();
             this.dgvUsers = new System.Windows.Forms.DataGridView();
@@ -51,40 +50,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopriteLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.Red;
-            this.btnClear.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(-126, 498);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(86, 42);
-            this.btnClear.TabIndex = 25;
-            this.btnClear.Text = "BACK";
-            this.btnClear.UseVisualStyleBackColor = false;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(21, 623);
+            this.button1.Location = new System.Drawing.Point(21, 624);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 42);
-            this.button1.TabIndex = 29;
+            this.button1.TabIndex = 33;
             this.button1.Text = "BACK";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnAddUsers
             // 
             this.btnAddUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUsers.Image")));
-            this.btnAddUsers.Location = new System.Drawing.Point(986, 593);
+            this.btnAddUsers.Location = new System.Drawing.Point(986, 594);
             this.btnAddUsers.Name = "btnAddUsers";
             this.btnAddUsers.Size = new System.Drawing.Size(109, 105);
-            this.btnAddUsers.TabIndex = 28;
+            this.btnAddUsers.TabIndex = 32;
             this.btnAddUsers.UseVisualStyleBackColor = true;
-            this.btnAddUsers.Click += new System.EventHandler(this.btnAddUsers_Click);
+            this.btnAddUsers.Click += new System.EventHandler(this.btnAddUsers_Click_1);
             // 
             // dgvUsers
             // 
@@ -99,12 +86,12 @@
             this.Column4,
             this.Edit,
             this.Delete});
-            this.dgvUsers.Location = new System.Drawing.Point(21, 142);
+            this.dgvUsers.Location = new System.Drawing.Point(21, 143);
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.RowHeadersWidth = 62;
             this.dgvUsers.RowTemplate.Height = 28;
             this.dgvUsers.Size = new System.Drawing.Size(1074, 445);
-            this.dgvUsers.TabIndex = 27;
+            this.dgvUsers.TabIndex = 31;
             this.dgvUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsers_CellContentClick);
             // 
             // Column7
@@ -176,7 +163,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1140, 113);
-            this.panel2.TabIndex = 26;
+            this.panel2.TabIndex = 30;
             // 
             // label1
             // 
@@ -235,7 +222,7 @@
             this.pictureBoxShopriteLogo.TabIndex = 4;
             this.pictureBoxShopriteLogo.TabStop = false;
             // 
-            // ManageUser
+            // ManageUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -244,10 +231,10 @@
             this.Controls.Add(this.btnAddUsers);
             this.Controls.Add(this.dgvUsers);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btnClear);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ManageUser";
-            this.Text = "ManageUser";
+            this.Name = "ManageUsers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ManageUsers";
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -258,7 +245,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnAddUsers;
         private System.Windows.Forms.DataGridView dgvUsers;

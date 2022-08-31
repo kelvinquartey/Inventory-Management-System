@@ -11,11 +11,6 @@ using System.Windows.Forms;
 
 namespace MallInventoryManagementSystem
 {
-
-    
-
-
-
     public partial class ReceiptForm : Form
     {
 
@@ -43,6 +38,13 @@ namespace MallInventoryManagementSystem
             InitializeComponent();
             LoadReceipt();
         }
+        private void delete()
+        {
+            con.Open();
+            cm = new SqlCommand("DELETE FROM ReceiptTb", con);
+            cm.ExecuteNonQuery();
+            con.Close();
+        }
 
         private void dgvReceipt_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -56,27 +58,25 @@ namespace MallInventoryManagementSystem
                     cm.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Purchase has been succesfully deleted!");
-                    con.Open();
-                    
+
+
 
                 }
             }
             LoadReceipt();
         }
 
-
-        private void delete()
+        private void btnPrint_Click(object sender, EventArgs e)
         {
-            con.Open();
-            cm = new SqlCommand("DELETE * FROM ReceiptTb", con);
-            cm.ExecuteNonQuery();
-            con.Close();
+            delete();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-
             delete();
+            this.Hide();
+            SalesForm form = new SalesForm();
+            form.ShowDialog();
         }
     }
 }

@@ -40,29 +40,12 @@ namespace MallInventoryManagementSystem
             LoadCategory();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        
 
-        private void buttonHome_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AdminHome ad = new AdminHome();
-            ad.Show();
-        }
 
-        private void btnAddUsers_Click(object sender, EventArgs e)
+        private void dgvCategory_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            CategoryModule formModule = new CategoryModule();
-            formModule.btnSave.Enabled = true;
-            formModule.btnUpdate.Enabled = false;
-            formModule.ShowDialog();
-            LoadCategory();
-        }
 
-        private void dgvCategory_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
             string colName = dgvCategory.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")
             {
@@ -86,6 +69,32 @@ namespace MallInventoryManagementSystem
                 }
             }
             LoadCategory();
+        }
+
+        private void btnAddUsers_Click_1(object sender, EventArgs e)
+        {
+            CategoryModule formModule = new CategoryModule();
+            formModule.btnSave.Enabled = true;
+            formModule.btnUpdate.Enabled = false;
+            formModule.ShowDialog();
+            LoadCategory();
+        }
+
+        private void buttonHome_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminHome ad = new AdminHome();
+            ad.Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

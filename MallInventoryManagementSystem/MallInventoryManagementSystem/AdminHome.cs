@@ -17,11 +17,6 @@ namespace MallInventoryManagementSystem
             InitializeComponent();
         }
 
-        private void labelClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void buttonManageUsers_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -32,14 +27,24 @@ namespace MallInventoryManagementSystem
         private void buttonManageProducts_Click(object sender, EventArgs e)
         {
             this.Hide();
+            ProductCategoryOption productCategoryOption = new ProductCategoryOption();
+            productCategoryOption.ShowDialog();
 
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            LoginForm loginForm = new LoginForm();  
-            loginForm.ShowDialog();
+            if (MessageBox.Show("Logout", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                LoginForm loginForm = new LoginForm();
+                loginForm.ShowDialog();
+            }
+        }
+
+        private void labelClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

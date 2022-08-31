@@ -19,11 +19,40 @@ namespace MallInventoryManagementSystem
         public CategoryModule()
         {
             InitializeComponent();
+        }      
+
+        
+        public void Clear()
+        {
+            txtBoxCatName.Clear();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnClear_Click_1(object sender, EventArgs e)
         {
-            this.Dispose();
+            Clear();
+            btnSave.Enabled = true;
+            btnUpdate.Enabled = false;
+        }
+
+        private void btnUpdate_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Are you sure you want to Edit this Category?", "Saving Category", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    SqlCommand cm = new SqlCommand("UPDATE CatTb SET catname=@catname WHERE  catid LIKE '" + labelCatId.Text + "'", con);
+                    cm.Parameters.AddWithValue("@catname", txtBoxCatName.Text);
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Category has been successfully Updated!");
+                    this.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -47,38 +76,11 @@ namespace MallInventoryManagementSystem
             }
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (MessageBox.Show("Are you sure you want to Edit this Category?", "Saving Category", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    SqlCommand cm = new SqlCommand("UPDATE CatTb SET catname=@catname WHERE  catid LIKE '" + labelCatId.Text + "'", con);
-                    cm.Parameters.AddWithValue("@catname", txtBoxCatName.Text);
-                    con.Open();
-                    cm.ExecuteNonQuery();
-                    con.Close();
-                    MessageBox.Show("Category has been successfully Updated!");
-                    this.Dispose();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        public void Clear()
-        {
-            txtBoxCatName.Clear();
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            Clear();
-            btnSave.Enabled = true;
-            btnUpdate.Enabled = false;
+            this.Dispose();
         }
     }
 
-        
+
 }

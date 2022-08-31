@@ -32,7 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnAddUsers = new System.Windows.Forms.Button();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,52 +60,52 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(318, 630);
+            this.pictureBox1.Location = new System.Drawing.Point(318, 631);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 52);
-            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(356, 630);
+            this.label2.Location = new System.Drawing.Point(356, 631);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 29);
-            this.label2.TabIndex = 34;
+            this.label2.TabIndex = 41;
             this.label2.Text = "Search:";
             // 
             // txtSearch
             // 
             this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtSearch.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(449, 634);
+            this.txtSearch.Location = new System.Drawing.Point(449, 635);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(465, 32);
-            this.txtSearch.TabIndex = 33;
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            this.txtSearch.TabIndex = 40;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged_1);
             // 
-            // btnClear
+            // btnBack
             // 
-            this.btnClear.BackColor = System.Drawing.Color.Red;
-            this.btnClear.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(21, 624);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(86, 42);
-            this.btnClear.TabIndex = 32;
-            this.btnClear.Text = "BACK";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnBack.BackColor = System.Drawing.Color.Red;
+            this.btnBack.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(21, 625);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(86, 42);
+            this.btnBack.TabIndex = 39;
+            this.btnBack.Text = "BACK";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnAddUsers
             // 
             this.btnAddUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUsers.Image")));
-            this.btnAddUsers.Location = new System.Drawing.Point(986, 594);
+            this.btnAddUsers.Location = new System.Drawing.Point(986, 595);
             this.btnAddUsers.Name = "btnAddUsers";
             this.btnAddUsers.Size = new System.Drawing.Size(109, 105);
-            this.btnAddUsers.TabIndex = 31;
+            this.btnAddUsers.TabIndex = 38;
             this.btnAddUsers.UseVisualStyleBackColor = true;
             this.btnAddUsers.Click += new System.EventHandler(this.btnAddUsers_Click);
             // 
@@ -124,12 +124,12 @@
             this.Column6,
             this.Edit,
             this.Delete});
-            this.dgvProducts.Location = new System.Drawing.Point(21, 143);
+            this.dgvProducts.Location = new System.Drawing.Point(21, 144);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.RowHeadersWidth = 62;
             this.dgvProducts.RowTemplate.Height = 28;
             this.dgvProducts.Size = new System.Drawing.Size(1074, 445);
-            this.dgvProducts.TabIndex = 30;
+            this.dgvProducts.TabIndex = 37;
             this.dgvProducts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellContentClick);
             // 
             // Column7
@@ -217,7 +217,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1140, 113);
-            this.panel2.TabIndex = 29;
+            this.panel2.TabIndex = 36;
             // 
             // label1
             // 
@@ -284,7 +284,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnAddUsers);
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.panel2);
@@ -307,7 +307,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnAddUsers;
         private System.Windows.Forms.DataGridView dgvProducts;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;

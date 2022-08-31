@@ -57,7 +57,7 @@
             this.login.Location = new System.Drawing.Point(76, 36);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(509, 630);
-            this.login.TabIndex = 2;
+            this.login.TabIndex = 3;
             // 
             // labelLoginFirst
             // 
@@ -147,7 +147,6 @@
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(324, 32);
             this.textBoxUsername.TabIndex = 8;
-            this.textBoxUsername.TextChanged += new System.EventHandler(this.textBoxUsername_TextChanged);
             // 
             // checkBoxShowPassword
             // 
@@ -218,7 +217,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoginForm";
+            this.Text = "Form1";
             this.login.ResumeLayout(false);
             this.login.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -246,3 +245,4 @@
         private System.Windows.Forms.Label label1;
     }
 }
+

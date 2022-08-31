@@ -48,61 +48,61 @@
             // 
             this.labelCatId.AutoSize = true;
             this.labelCatId.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCatId.Location = new System.Drawing.Point(27, 199);
+            this.labelCatId.Location = new System.Drawing.Point(27, 206);
             this.labelCatId.Name = "labelCatId";
             this.labelCatId.Size = new System.Drawing.Size(105, 24);
-            this.labelCatId.TabIndex = 47;
+            this.labelCatId.TabIndex = 54;
             this.labelCatId.Text = "Category Id";
             this.labelCatId.Visible = false;
             // 
             // btnSave
             // 
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(331, 229);
+            this.btnSave.Location = new System.Drawing.Point(331, 236);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 105);
-            this.btnSave.TabIndex = 46;
+            this.btnSave.TabIndex = 53;
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
-            this.btnUpdate.Location = new System.Drawing.Point(176, 229);
+            this.btnUpdate.Location = new System.Drawing.Point(176, 236);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(109, 105);
-            this.btnUpdate.TabIndex = 45;
+            this.btnUpdate.TabIndex = 52;
             this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
             // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.Red;
             this.btnClear.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(502, 199);
+            this.btnClear.Location = new System.Drawing.Point(502, 206);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(86, 42);
-            this.btnClear.TabIndex = 44;
+            this.btnClear.TabIndex = 51;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click_1);
             // 
             // txtBoxCatName
             // 
-            this.txtBoxCatName.Location = new System.Drawing.Point(194, 151);
+            this.txtBoxCatName.Location = new System.Drawing.Point(194, 158);
             this.txtBoxCatName.Name = "txtBoxCatName";
             this.txtBoxCatName.Size = new System.Drawing.Size(394, 26);
-            this.txtBoxCatName.TabIndex = 43;
+            this.txtBoxCatName.TabIndex = 50;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(27, 153);
+            this.label4.Location = new System.Drawing.Point(27, 160);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(144, 24);
-            this.label4.TabIndex = 42;
+            this.label4.TabIndex = 49;
             this.label4.Text = "Category Name:";
             // 
             // panel2
@@ -116,7 +116,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(674, 91);
-            this.panel2.TabIndex = 41;
+            this.panel2.TabIndex = 48;
             // 
             // label1
             // 

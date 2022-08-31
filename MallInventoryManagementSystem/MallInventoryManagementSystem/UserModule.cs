@@ -24,19 +24,7 @@ namespace MallInventoryManagementSystem
         private void UserModule_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            Clear();
-            btnSave.Enabled = true;
-            btnUpdate.Enabled = false;
-        }
+        }      
 
         public void Clear()
         {
@@ -46,7 +34,7 @@ namespace MallInventoryManagementSystem
             txtBoxUname.Clear();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnSave_Click_1(object sender, EventArgs e)
         {
             if (txtBoxPword.Text != txtBoxCpword.Text)
             {
@@ -76,7 +64,7 @@ namespace MallInventoryManagementSystem
             }
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnUpdate_Click_1(object sender, EventArgs e)
         {
             if (txtBoxPword.Text != txtBoxCpword.Text)
             {
@@ -103,6 +91,18 @@ namespace MallInventoryManagementSystem
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnClear_Click_1(object sender, EventArgs e)
+        {
+            Clear();
+            btnSave.Enabled = true;
+            btnUpdate.Enabled = false;
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

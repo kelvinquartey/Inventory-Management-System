@@ -15,6 +15,7 @@ namespace MallInventoryManagementSystem
         public AttendantHome()
         {
             InitializeComponent();
+            welcome();
         }
 
 
@@ -25,9 +26,26 @@ namespace MallInventoryManagementSystem
             labelWelcome.Text = username;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Logout", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                LoginForm loginForm = new LoginForm();
+                loginForm.ShowDialog();
+            }
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            SalesForm salesForm = new SalesForm();
+            salesForm.ShowDialog();
         }
     }
 

@@ -53,23 +53,23 @@
             this.buttonHome.BackColor = System.Drawing.Color.Green;
             this.buttonHome.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHome.ForeColor = System.Drawing.Color.White;
-            this.buttonHome.Location = new System.Drawing.Point(34, 586);
+            this.buttonHome.Location = new System.Drawing.Point(34, 589);
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.Size = new System.Drawing.Size(106, 41);
-            this.buttonHome.TabIndex = 17;
+            this.buttonHome.TabIndex = 21;
             this.buttonHome.Text = "HOME";
             this.buttonHome.UseVisualStyleBackColor = false;
-            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
+            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click_1);
             // 
             // btnAddUsers
             // 
             this.btnAddUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUsers.Image")));
-            this.btnAddUsers.Location = new System.Drawing.Point(703, 576);
+            this.btnAddUsers.Location = new System.Drawing.Point(703, 579);
             this.btnAddUsers.Name = "btnAddUsers";
             this.btnAddUsers.Size = new System.Drawing.Size(72, 62);
-            this.btnAddUsers.TabIndex = 16;
+            this.btnAddUsers.TabIndex = 20;
             this.btnAddUsers.UseVisualStyleBackColor = true;
-            this.btnAddUsers.Click += new System.EventHandler(this.btnAddUsers_Click);
+            this.btnAddUsers.Click += new System.EventHandler(this.btnAddUsers_Click_1);
             // 
             // dgvCategory
             // 
@@ -82,13 +82,13 @@
             this.Column2,
             this.Edit,
             this.Delete});
-            this.dgvCategory.Location = new System.Drawing.Point(34, 125);
+            this.dgvCategory.Location = new System.Drawing.Point(34, 128);
             this.dgvCategory.Name = "dgvCategory";
             this.dgvCategory.RowHeadersWidth = 62;
             this.dgvCategory.RowTemplate.Height = 28;
             this.dgvCategory.Size = new System.Drawing.Size(741, 445);
-            this.dgvCategory.TabIndex = 15;
-            this.dgvCategory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategory_CellContentClick);
+            this.dgvCategory.TabIndex = 19;
+            this.dgvCategory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategory_CellContentClick_1);
             // 
             // Column7
             // 
@@ -143,7 +143,8 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(819, 113);
-            this.panel2.TabIndex = 14;
+            this.panel2.TabIndex = 18;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 
@@ -167,7 +168,7 @@
             this.label5.Size = new System.Drawing.Size(34, 32);
             this.label5.TabIndex = 7;
             this.label5.Text = "X";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
             // labelClose
             // 

@@ -40,19 +40,9 @@ namespace MallInventoryManagementSystem
             con.Close();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AdminHome ms = new AdminHome();
-            ms.ShowDialog();
-        }
-
-        private void btnAddUsers_Click(object sender, EventArgs e)
+        
+      
+        private void btnAddUsers_Click_1(object sender, EventArgs e)
         {
             UserModule userModule = new UserModule();
             userModule.btnSave.Enabled = true;
@@ -89,6 +79,18 @@ namespace MallInventoryManagementSystem
                 }
             }
             LoadUser();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminHome ms = new AdminHome();
+            ms.ShowDialog();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

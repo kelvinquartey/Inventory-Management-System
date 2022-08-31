@@ -24,13 +24,6 @@ namespace MallInventoryManagementSystem
             LoadProduct();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AttendantHome attendantHome = new AttendantHome();
-            attendantHome.ShowDialog();
-        }
-
         private void SalesForm_Load(object sender, EventArgs e)
         {
 
@@ -52,6 +45,72 @@ namespace MallInventoryManagementSystem
             con.Close();
         }
 
+        
+
+        
+
+        /** private void LoadData()
+         {
+             SqlCommand cd = new SqlCommand("INSERT INTO ReceiptTb(pname,pprice,pqty,total)VALUES(@pname,@pprice,@pqty,@total)", con);
+             cd.Parameters.AddWithValue("@pname", textBoxProdName.Text);
+             cd.Parameters.AddWithValue("@pprice", Convert.ToInt16(textBxPrice.Text));
+             cd.Parameters.AddWithValue("@pqty", Convert.ToInt16(textBxQty.Text));
+             cd.Parameters.AddWithValue("@total", txtBxTotal.Text);
+             con.Open();
+             cd.ExecuteNonQuery();
+             con.Close();
+
+         }**/
+
+        
+
+        public void Clear()
+        {
+            textBoxProdName.Clear();
+            textBxQty.Clear();
+            txtBxTotal.Clear();
+            textBxPrice.Clear();
+            textBxCash.Clear();
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            AttendantHome attendantHome = new AttendantHome();
+            attendantHome.ShowDialog();
+        }
+
+        private void btnGo_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ReceiptForm receiptForm = new ReceiptForm();
+            receiptForm.ShowDialog();
+            Clear();
+        }
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
+        {
+            SqlCommand cm = new SqlCommand("INSERT INTO TransTb(pname,pprice,pqty,date)VALUES(@pname,@pprice,@pqty,@date)", con);
+            cm.Parameters.AddWithValue("@pname", textBoxProdName.Text);
+            cm.Parameters.AddWithValue("@pprice", Convert.ToInt16(textBxPrice.Text));
+            cm.Parameters.AddWithValue("@pqty", Convert.ToInt16(textBxQty.Text));
+            cm.Parameters.AddWithValue("@date", this.dateTimePicker1.Text);
+            con.Open();
+            cm.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Product has been successfully added");
+            SqlCommand cd = new SqlCommand("INSERT INTO ReceiptTb(pname,pprice,pqty,total)VALUES(@pname,@pprice,@pqty,@total)", con);
+            cd.Parameters.AddWithValue("@pname", textBoxProdName.Text);
+            cd.Parameters.AddWithValue("@pprice", textBxPrice.Text);
+            cd.Parameters.AddWithValue("@pqty", Convert.ToInt16(textBxQty.Text));
+            cd.Parameters.AddWithValue("@total", txtBxTotal.Text);
+            con.Open();
+            cd.ExecuteNonQuery();
+            con.Close();
+            Clear();
+            ;
+        }
+
         private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             LoadProduct();
@@ -62,37 +121,26 @@ namespace MallInventoryManagementSystem
             LoadProduct();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnCheck_Click(object sender, EventArgs e)
         {
             try
             {
                 cm = new SqlCommand("SELECT * FROM ProductTb WHERE pname=@pname AND pprice=@pprice", con);
                 cm.Parameters.AddWithValue("@pname", textBoxProdName.Text);
-                cm.Parameters.AddWithValue("@price", textBxPrice.Text);
+                cm.Parameters.AddWithValue("@pprice", textBxPrice.Text);
                 con.Open();
                 dr = cm.ExecuteReader();
                 dr.Read();
+
                 if (dr.HasRows)
                 {
-
-                    SqlCommand cm = new SqlCommand("INSERT INTO TransTb(pname,pprice,pqty,date)VALUES(@pname,@pprice,@pqty,@date)", con);
-                    cm.Parameters.AddWithValue("@pname", textBoxProdName.Text);
-                    cm.Parameters.AddWithValue("@pprice", Convert.ToInt16(textBxPrice.Text));
-                    cm.Parameters.AddWithValue("@pqty", Convert.ToInt16(textBxQty.Text));
-                    cm.Parameters.AddWithValue("@date", dateTimePicker1.Value.ToString());
-                    con.Open();
-                    cm.ExecuteNonQuery();
-                    con.Close();
-                    MessageBox.Show("Product has been successfully added");
-                    LoadData();
-
+                    MessageBox.Show("Product Details are CORRECT!", "PROCEED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Product Details are incorrect!", "TRY AGAIN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Product Details are Incorrect!", "TRY AGAIN", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 con.Close();
-                
             }
             catch (Exception ex)
             {
@@ -100,34 +148,18 @@ namespace MallInventoryManagementSystem
             }
         }
 
-        private void LoadData()
+        /**private void LoadData()
         {
-            SqlCommand cm = new SqlCommand("INSERT INTO ReceiptTb(pname,pprice,pqty,total)VALUES(@pname,@pprice,@pqty,@total)", con);
-            cm.Parameters.AddWithValue("@pname", textBoxProdName.Text);
-            cm.Parameters.AddWithValue("@pprice", Convert.ToInt16(textBxPrice.Text));
-            cm.Parameters.AddWithValue("@pqty", Convert.ToInt16(textBxQty.Text));
-            cm.Parameters.AddWithValue("@total", txtBxTotal.Text);
+            SqlCommand cd = new SqlCommand("INSERT INTO ReceiptTb(pname,pprice,pqty,total)VALUES(@pname,@pprice,@pqty,@total)", con);
+            cd.Parameters.AddWithValue("@pname", textBoxProdName.Text);
+            cd.Parameters.AddWithValue("@pprice", textBxPrice.Text);
+            cd.Parameters.AddWithValue("@pqty", Convert.ToInt16(textBxQty.Text));
+            cd.Parameters.AddWithValue("@total", txtBxTotal.Text);
             con.Open();
-            cm.ExecuteNonQuery();
+            cd.ExecuteNonQuery();
             con.Close();
-            
-        }
 
-        private void btnGo_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ReceiptForm receiptForm = new ReceiptForm();
-            receiptForm.ShowDialog();
-            Clear();
-        }
+        }**/
 
-        public void Clear()
-        {
-            textBoxProdName.Clear();
-            textBxQty.Clear();
-            txtBxTotal.Clear();
-            textBxPrice.Clear();
-            textBxCash.Clear();
-        }
     }
 }
