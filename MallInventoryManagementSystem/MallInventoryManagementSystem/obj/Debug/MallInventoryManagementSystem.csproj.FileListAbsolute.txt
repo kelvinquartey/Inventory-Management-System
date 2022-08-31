@@ -19,3 +19,4 @@ C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSys
 C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ProductModule.resources
 C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.UserModule.resources
 C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.AttendantHome.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\DCIT 318\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.SalesForm.resources
