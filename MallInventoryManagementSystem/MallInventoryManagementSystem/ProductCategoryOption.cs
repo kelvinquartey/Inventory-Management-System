@@ -39,5 +39,12 @@ namespace MallInventoryManagementSystem
             AdminHome adminForm = new AdminHome();
             adminForm.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AttendantHome adminForm = new AttendantHome();
+            adminForm.ShowDialog();
+        }
     }
 }

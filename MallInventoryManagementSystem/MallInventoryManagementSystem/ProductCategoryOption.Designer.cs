@@ -36,6 +36,7 @@
             this.buttonCategories = new System.Windows.Forms.Button();
             this.labelInvent = new System.Windows.Forms.Label();
             this.pictureBoxShopriteLogo = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopriteLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,11 +114,25 @@
             this.pictureBoxShopriteLogo.TabIndex = 27;
             this.pictureBoxShopriteLogo.TabStop = false;
             // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Green;
+            this.btnHome.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Location = new System.Drawing.Point(42, 450);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(96, 51);
+            this.btnHome.TabIndex = 34;
+            this.btnHome.Text = "HOME";
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ProductCategoryOption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(425, 513);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.labelClose);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -144,5 +159,6 @@
         private System.Windows.Forms.Button buttonCategories;
         private System.Windows.Forms.Label labelInvent;
         private System.Windows.Forms.PictureBox pictureBoxShopriteLogo;
+        private System.Windows.Forms.Button btnHome;
     }
 }

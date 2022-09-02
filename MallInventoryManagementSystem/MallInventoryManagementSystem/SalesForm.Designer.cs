@@ -61,6 +61,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnCloseTill = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.panel1.SuspendLayout();
@@ -345,11 +346,25 @@
             this.btnCheck.UseVisualStyleBackColor = true;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
+            // btnCloseTill
+            // 
+            this.btnCloseTill.BackColor = System.Drawing.Color.Red;
+            this.btnCloseTill.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseTill.ForeColor = System.Drawing.Color.White;
+            this.btnCloseTill.Location = new System.Drawing.Point(12, 656);
+            this.btnCloseTill.Name = "btnCloseTill";
+            this.btnCloseTill.Size = new System.Drawing.Size(152, 41);
+            this.btnCloseTill.TabIndex = 70;
+            this.btnCloseTill.Text = "CLOSE TILL";
+            this.btnCloseTill.UseVisualStyleBackColor = false;
+            this.btnCloseTill.Click += new System.EventHandler(this.buttonHome_Click);
+            // 
             // SalesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(939, 709);
+            this.Controls.Add(this.btnCloseTill);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.btnGo);
             this.Controls.Add(this.dateTimePicker1);
@@ -385,7 +400,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnGo;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox textBxCash;
         private System.Windows.Forms.Label label8;
@@ -415,5 +429,7 @@
         private System.Windows.Forms.ToolTip toolTip3;
         private System.Windows.Forms.ToolTip toolTip2;
         private System.Windows.Forms.ToolTip toolTip1;
+        public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnCloseTill;
     }
 }

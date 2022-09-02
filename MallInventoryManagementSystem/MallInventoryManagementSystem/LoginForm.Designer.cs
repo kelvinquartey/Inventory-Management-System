@@ -50,7 +50,7 @@
             // 
             // login
             // 
-            this.login.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.login.BackColor = System.Drawing.Color.White;
             this.login.Controls.Add(this.labelLoginFirst);
             this.login.Controls.Add(this.pictureBox1);
             this.login.Controls.Add(this.groupBox1);
@@ -72,7 +72,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(189, 3);
             this.pictureBox1.Name = "pictureBox1";
@@ -135,6 +135,7 @@
             // 
             // textBoxPassword
             // 
+            this.textBoxPassword.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxPassword.Location = new System.Drawing.Point(114, 82);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(324, 32);
@@ -143,6 +144,7 @@
             // 
             // textBoxUsername
             // 
+            this.textBoxUsername.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxUsername.Location = new System.Drawing.Point(114, 27);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(324, 32);

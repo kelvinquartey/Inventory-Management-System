@@ -47,6 +47,13 @@ namespace MallInventoryManagementSystem
             SalesForm salesForm = new SalesForm();
             salesForm.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TransactionForm transactionForm = new TransactionForm();
+            transactionForm.ShowDialog();
+        }
     }
 
 }

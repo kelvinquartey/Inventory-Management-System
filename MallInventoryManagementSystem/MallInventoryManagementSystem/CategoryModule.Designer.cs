@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CategoryModule));
             this.labelCatId = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
@@ -40,6 +41,8 @@
             this.labelClose = new System.Windows.Forms.Label();
             this.labelInvent = new System.Windows.Forms.Label();
             this.pictureBoxShopriteLogo = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopriteLogo)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +65,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 105);
             this.btnSave.TabIndex = 53;
+            this.toolTip2.SetToolTip(this.btnSave, "Save Category");
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -72,6 +76,7 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(109, 105);
             this.btnUpdate.TabIndex = 52;
+            this.toolTip1.SetToolTip(this.btnUpdate, "Update Category");
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
             // 
@@ -201,5 +206,7 @@
         private System.Windows.Forms.Label labelClose;
         private System.Windows.Forms.Label labelInvent;
         private System.Windows.Forms.PictureBox pictureBoxShopriteLogo;
+        private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

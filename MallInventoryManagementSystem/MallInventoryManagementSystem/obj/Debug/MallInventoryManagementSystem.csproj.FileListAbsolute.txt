@@ -20,3 +20,6 @@ C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallI
 C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ProductModule.resources
 C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.ReceiptForm.resources
 C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.SalesForm.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.WelcomeForm.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.TransactionForm.resources
+C:\Users\NII\Desktop\ug\Level 300\Second Sem\MallInventoryManagementSystem\MallInventoryManagementSystem\obj\Debug\MallInventoryManagementSystem.AdminTransactionForm.resources

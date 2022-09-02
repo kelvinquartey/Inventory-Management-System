@@ -110,5 +110,10 @@ namespace MallInventoryManagementSystem
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void comboQty_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

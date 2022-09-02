@@ -46,5 +46,12 @@ namespace MallInventoryManagementSystem
         {
             Application.Exit();
         }
+
+        private void buttonManageStocks_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminTransactionForm adminTransactionForm = new AdminTransactionForm();
+            adminTransactionForm.ShowDialog();
+        }
     }
 }

@@ -52,6 +52,12 @@
     <Compile Include="AdminHome.Designer.cs">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminTransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminTransactionForm.Designer.cs">
+      <DependentUpon>AdminTransactionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AttendantHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,12 @@
     <Compile Include="ManageUsers.Designer.cs">
       <DependentUpon>ManageUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrintReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintReceipt.Designer.cs">
+      <DependentUpon>PrintReceipt.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductCategoryOption.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,14 +126,29 @@
     <Compile Include="SalesForm.Designer.cs">
       <DependentUpon>SalesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionForm.Designer.cs">
+      <DependentUpon>TransactionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserModule.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserModule.Designer.cs">
       <DependentUpon>UserModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTransactionForm.resx">
+      <DependentUpon>AdminTransactionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AttendantHome.resx">
       <DependentUpon>AttendantHome.cs</DependentUpon>
@@ -162,8 +189,14 @@
     <EmbeddedResource Include="SalesForm.resx">
       <DependentUpon>SalesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TransactionForm.resx">
+      <DependentUpon>TransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserModule.resx">
       <DependentUpon>UserModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

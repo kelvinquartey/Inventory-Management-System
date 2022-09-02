@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductModule));
             this.labelProdID = new System.Windows.Forms.Label();
             this.comboQty = new System.Windows.Forms.ComboBox();
@@ -48,6 +49,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtBoxPname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopriteLogo)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +74,7 @@
             this.comboQty.Name = "comboQty";
             this.comboQty.Size = new System.Drawing.Size(394, 28);
             this.comboQty.TabIndex = 80;
+            this.comboQty.SelectedIndexChanged += new System.EventHandler(this.comboQty_SelectedIndexChanged);
             // 
             // txtBoxDesc
             // 
@@ -96,6 +100,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 105);
             this.btnSave.TabIndex = 77;
+            this.toolTip2.SetToolTip(this.btnSave, "Save Product");
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -106,6 +111,7 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(109, 105);
             this.btnUpdate.TabIndex = 76;
+            this.toolTip1.SetToolTip(this.btnUpdate, "Update Product");
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -295,5 +301,7 @@
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtBoxPname;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

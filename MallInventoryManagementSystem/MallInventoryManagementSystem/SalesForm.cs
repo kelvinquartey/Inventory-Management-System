@@ -148,6 +148,16 @@ namespace MallInventoryManagementSystem
             }
         }
 
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("End Till", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                AttendantHome adminForm = new AttendantHome();
+                adminForm.ShowDialog();
+            }
+        }
+
         /**private void LoadData()
         {
             SqlCommand cd = new SqlCommand("INSERT INTO ReceiptTb(pname,pprice,pqty,total)VALUES(@pname,@pprice,@pqty,@total)", con);

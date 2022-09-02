@@ -58,11 +58,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(872, 437);
+            this.label2.Location = new System.Drawing.Point(835, 437);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 24);
+            this.label2.Size = new System.Drawing.Size(221, 24);
             this.label2.TabIndex = 26;
-            this.label2.Text = "MANAGE STOCKS";
+            this.label2.Text = "MANAGE TRANSACTIONS";
             // 
             // label1
             // 
@@ -102,6 +102,7 @@
             this.buttonManageStocks.TabIndex = 23;
             this.buttonManageStocks.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonManageStocks.UseVisualStyleBackColor = false;
+            this.buttonManageStocks.Click += new System.EventHandler(this.buttonManageStocks_Click);
             // 
             // buttonManageUsers
             // 

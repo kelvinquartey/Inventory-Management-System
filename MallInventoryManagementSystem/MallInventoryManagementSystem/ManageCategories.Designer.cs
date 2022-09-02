@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageCategories));
             this.buttonHome = new System.Windows.Forms.Button();
             this.btnAddUsers = new System.Windows.Forms.Button();
@@ -43,6 +44,7 @@
             this.labelClose = new System.Windows.Forms.Label();
             this.labelInvent = new System.Windows.Forms.Label();
             this.pictureBoxShopriteLogo = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopriteLogo)).BeginInit();
@@ -68,6 +70,7 @@
             this.btnAddUsers.Name = "btnAddUsers";
             this.btnAddUsers.Size = new System.Drawing.Size(72, 62);
             this.btnAddUsers.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.btnAddUsers, "Add Category");
             this.btnAddUsers.UseVisualStyleBackColor = true;
             this.btnAddUsers.Click += new System.EventHandler(this.btnAddUsers_Click_1);
             // 
@@ -240,5 +243,6 @@
         private System.Windows.Forms.Label labelClose;
         private System.Windows.Forms.Label labelInvent;
         private System.Windows.Forms.PictureBox pictureBoxShopriteLogo;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
