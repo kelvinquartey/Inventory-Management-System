@@ -93,7 +93,7 @@ namespace MallInventoryManagementSystem
                     dr.Read();
                     if (dr.HasRows)
                     {
-                        MessageBox.Show("Welcome" + dr["fullname"].ToString() + " | ", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Welcome " + dr["fullname"].ToString(), "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         AttendantHome ff = new AttendantHome();
                         this.Hide();
                         ff.ShowDialog();
@@ -119,3 +119,5 @@ namespace MallInventoryManagementSystem
         }
     }
 }
+
+

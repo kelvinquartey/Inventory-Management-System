@@ -56,9 +56,10 @@
             // 
             // txtBoxCpword
             // 
+            this.txtBoxCpword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxCpword.Location = new System.Drawing.Point(256, 278);
             this.txtBoxCpword.Name = "txtBoxCpword";
-            this.txtBoxCpword.Size = new System.Drawing.Size(394, 26);
+            this.txtBoxCpword.Size = new System.Drawing.Size(394, 30);
             this.txtBoxCpword.TabIndex = 64;
             this.txtBoxCpword.UseSystemPasswordChar = true;
             // 
@@ -168,9 +169,10 @@
             // 
             // txtBoxPhone
             // 
+            this.txtBoxPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxPhone.Location = new System.Drawing.Point(256, 322);
             this.txtBoxPhone.Name = "txtBoxPhone";
-            this.txtBoxPhone.Size = new System.Drawing.Size(394, 26);
+            this.txtBoxPhone.Size = new System.Drawing.Size(394, 30);
             this.txtBoxPhone.TabIndex = 58;
             // 
             // label4
@@ -185,9 +187,10 @@
             // 
             // txtBoxPword
             // 
+            this.txtBoxPword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxPword.Location = new System.Drawing.Point(256, 234);
             this.txtBoxPword.Name = "txtBoxPword";
-            this.txtBoxPword.Size = new System.Drawing.Size(394, 26);
+            this.txtBoxPword.Size = new System.Drawing.Size(394, 30);
             this.txtBoxPword.TabIndex = 56;
             this.txtBoxPword.UseSystemPasswordChar = true;
             // 
@@ -203,9 +206,10 @@
             // 
             // txtBoxFname
             // 
+            this.txtBoxFname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxFname.Location = new System.Drawing.Point(256, 190);
             this.txtBoxFname.Name = "txtBoxFname";
-            this.txtBoxFname.Size = new System.Drawing.Size(394, 26);
+            this.txtBoxFname.Size = new System.Drawing.Size(394, 30);
             this.txtBoxFname.TabIndex = 54;
             // 
             // label2
@@ -220,9 +224,10 @@
             // 
             // txtBoxUname
             // 
+            this.txtBoxUname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxUname.Location = new System.Drawing.Point(256, 146);
             this.txtBoxUname.Name = "txtBoxUname";
-            this.txtBoxUname.Size = new System.Drawing.Size(394, 26);
+            this.txtBoxUname.Size = new System.Drawing.Size(394, 30);
             this.txtBoxUname.TabIndex = 52;
             // 
             // label1

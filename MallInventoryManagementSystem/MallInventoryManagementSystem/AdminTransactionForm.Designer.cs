@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminTransactionForm));
             this.dgvTransaction = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +46,10 @@
             this.txtBoxShowTransDate = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
+            this.printTransactions = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransaction)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopriteLogo)).BeginInit();
@@ -190,7 +195,7 @@
             // 
             // txtBoxShowTransDate
             // 
-            this.txtBoxShowTransDate.Location = new System.Drawing.Point(467, 600);
+            this.txtBoxShowTransDate.Location = new System.Drawing.Point(439, 573);
             this.txtBoxShowTransDate.Name = "txtBoxShowTransDate";
             this.txtBoxShowTransDate.Size = new System.Drawing.Size(339, 26);
             this.txtBoxShowTransDate.TabIndex = 78;
@@ -200,7 +205,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(379, 603);
+            this.label3.Location = new System.Drawing.Point(351, 576);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 77;
@@ -219,11 +224,37 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // printTransactions
+            // 
+            this.printTransactions.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printTransactions_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.Location = new System.Drawing.Point(969, 560);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(101, 88);
+            this.btnPrint.TabIndex = 79;
+            this.toolTip1.SetToolTip(this.btnPrint, "Print Transactions");
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // AdminTransactionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1143, 661);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.dgvTransaction);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtBoxShowTransDate);
@@ -260,5 +291,9 @@
         private System.Windows.Forms.TextBox txtBoxShowTransDate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnHome;
+        private System.Drawing.Printing.PrintDocument printTransactions;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

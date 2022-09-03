@@ -70,8 +70,22 @@ namespace MallInventoryManagementSystem
             textBxQty.Clear();
             txtBxTotal.Clear();
             textBxPrice.Clear();
-            textBxCash.Clear();
+            
         }
+
+        
+        public void Total()
+        {
+            int price;
+            price = int.Parse(textBxPrice.Text);
+            int quantity;
+            quantity = int.Parse(textBxQty.Text);
+            int total;
+            total = price * quantity;
+            string total1 = Convert.ToString(total);
+            txtBxTotal.Text = total1;
+        }
+
 
         private void label5_Click_1(object sender, EventArgs e)
         {
@@ -88,8 +102,11 @@ namespace MallInventoryManagementSystem
             Clear();
         }
 
+  
+
         private void btnAdd_Click_1(object sender, EventArgs e)
         {
+            
             SqlCommand cm = new SqlCommand("INSERT INTO TransTb(pname,pprice,pqty,date)VALUES(@pname,@pprice,@pqty,@date)", con);
             cm.Parameters.AddWithValue("@pname", textBoxProdName.Text);
             cm.Parameters.AddWithValue("@pprice", Convert.ToInt16(textBxPrice.Text));
@@ -134,6 +151,7 @@ namespace MallInventoryManagementSystem
 
                 if (dr.HasRows)
                 {
+                    Total();
                     MessageBox.Show("Product Details are CORRECT!", "PROCEED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -146,6 +164,7 @@ namespace MallInventoryManagementSystem
             {
                 MessageBox.Show(ex.Message);
             }
+            
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
@@ -156,6 +175,16 @@ namespace MallInventoryManagementSystem
                 AttendantHome adminForm = new AttendantHome();
                 adminForm.ShowDialog();
             }
+        }
+
+        private void txtBxTotal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
+
+        private void txtBxTotal_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         /**private void LoadData()
@@ -170,6 +199,7 @@ namespace MallInventoryManagementSystem
             con.Close();
 
         }**/
+
 
     }
 }

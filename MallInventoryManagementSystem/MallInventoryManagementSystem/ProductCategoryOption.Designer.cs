@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductCategoryOption));
             this.labelClose = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,6 +38,8 @@
             this.labelInvent = new System.Windows.Forms.Label();
             this.pictureBoxShopriteLogo = new System.Windows.Forms.PictureBox();
             this.btnHome = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopriteLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,6 +83,7 @@
             this.buttonProducts.Name = "buttonProducts";
             this.buttonProducts.Size = new System.Drawing.Size(119, 103);
             this.buttonProducts.TabIndex = 30;
+            this.toolTip2.SetToolTip(this.buttonProducts, "Manage Products");
             this.buttonProducts.UseVisualStyleBackColor = true;
             this.buttonProducts.Click += new System.EventHandler(this.buttonProducts_Click_1);
             // 
@@ -90,6 +94,7 @@
             this.buttonCategories.Name = "buttonCategories";
             this.buttonCategories.Size = new System.Drawing.Size(119, 103);
             this.buttonCategories.TabIndex = 29;
+            this.toolTip1.SetToolTip(this.buttonCategories, "Manage Categories");
             this.buttonCategories.UseVisualStyleBackColor = true;
             this.buttonCategories.Click += new System.EventHandler(this.buttonCategories_Click);
             // 
@@ -160,5 +165,7 @@
         private System.Windows.Forms.Label labelInvent;
         private System.Windows.Forms.PictureBox pictureBoxShopriteLogo;
         private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

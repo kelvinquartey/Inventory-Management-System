@@ -33,8 +33,6 @@
             this.btnGo = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.textBxCash = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.txtBxTotal = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBxPrice = new System.Windows.Forms.TextBox();
@@ -97,25 +95,6 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
-            // textBxCash
-            // 
-            this.textBxCash.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBxCash.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBxCash.Location = new System.Drawing.Point(338, 599);
-            this.textBxCash.Name = "textBxCash";
-            this.textBxCash.Size = new System.Drawing.Size(107, 32);
-            this.textBxCash.TabIndex = 65;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(271, 601);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 24);
-            this.label8.TabIndex = 64;
-            this.label8.Text = "Cash:";
-            // 
             // txtBxTotal
             // 
             this.txtBxTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -125,6 +104,8 @@
             this.txtBxTotal.ReadOnly = true;
             this.txtBxTotal.Size = new System.Drawing.Size(107, 32);
             this.txtBxTotal.TabIndex = 63;
+            this.txtBxTotal.TextChanged += new System.EventHandler(this.txtBxTotal_TextChanged);
+            this.txtBxTotal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxTotal_KeyPress);
             // 
             // label7
             // 
@@ -369,8 +350,6 @@
             this.Controls.Add(this.btnGo);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.textBxCash);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.txtBxTotal);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBxPrice);
@@ -401,13 +380,9 @@
 
         private System.Windows.Forms.Button btnGo;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TextBox textBxCash;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtBxTotal;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBxPrice;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBxQty;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -431,5 +406,7 @@
         private System.Windows.Forms.ToolTip toolTip1;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnCloseTill;
+        public System.Windows.Forms.TextBox textBxPrice;
+        public System.Windows.Forms.TextBox textBxQty;
     }
 }

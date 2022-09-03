@@ -94,6 +94,7 @@
             this.labelWelcome.Size = new System.Drawing.Size(74, 29);
             this.labelWelcome.TabIndex = 28;
             this.labelWelcome.Text = "label1";
+            this.labelWelcome.Click += new System.EventHandler(this.labelWelcome_Click);
             // 
             // pictureBox1
             // 

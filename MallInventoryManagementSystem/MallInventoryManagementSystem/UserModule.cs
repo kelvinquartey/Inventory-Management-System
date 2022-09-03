@@ -32,6 +32,7 @@ namespace MallInventoryManagementSystem
             txtBoxPhone.Clear();
             txtBoxPword.Clear();
             txtBoxUname.Clear();
+            txtBoxCpword.Clear();
         }
 
         private void btnSave_Click_1(object sender, EventArgs e)

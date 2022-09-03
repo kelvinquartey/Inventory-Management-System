@@ -54,6 +54,11 @@ namespace MallInventoryManagementSystem
             TransactionForm transactionForm = new TransactionForm();
             transactionForm.ShowDialog();
         }
+
+        private void labelWelcome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

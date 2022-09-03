@@ -60,5 +60,19 @@ namespace MallInventoryManagementSystem
         {
             LoadTransaction();
         }
+
+        private void printTransactions_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Bitmap imagebmp = new Bitmap(dgvTransaction.Width, dgvTransaction.Height);
+            dgvTransaction.DrawToBitmap(imagebmp, new Rectangle(0, 0, dgvTransaction.Width, dgvTransaction.Height));
+            e.Graphics.DrawImage(imagebmp, 120, 0);
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.Document = printTransactions;
+            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
+            printPreviewDialog1.ShowDialog();
+        }
     }
 }

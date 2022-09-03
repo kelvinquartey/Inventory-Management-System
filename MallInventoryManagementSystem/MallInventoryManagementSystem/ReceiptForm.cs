@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MallInventoryManagementSystem
 {
@@ -37,6 +40,7 @@ namespace MallInventoryManagementSystem
         {
             InitializeComponent();
             LoadReceipt();
+            LoadTotal();
         }
         private void delete()
         {
@@ -58,7 +62,7 @@ namespace MallInventoryManagementSystem
                     cm.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Purchase has been succesfully deleted!");
-
+                    LoadTotal();
 
 
                 }
@@ -66,17 +70,77 @@ namespace MallInventoryManagementSystem
             LoadReceipt();
         }
 
-        private void btnPrint_Click(object sender, EventArgs e)
+        Bitmap bitmaptoprint;
+
+        public void CaptureFormShot()
         {
-            delete();
+            bitmaptoprint = new Bitmap(this.Width, this.Height);
+            this.DrawToBitmap(bitmaptoprint, new Rectangle(0, 0, this.Width, this.Height));
         }
 
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
+            printPreviewDialog1.ShowDialog();
+        }
+        public void LoadTotal()
+        {
+            con.Open();
+            string total = "SELECT SUM(total) FROM ReceiptTb";
+
+            SqlCommand command = new SqlCommand(total, con);
+            SqlDataReader da = command.ExecuteReader();
+            while(da.Read())
+            {
+                txtBxGrandTotal.Text = da.GetValue(0).ToString();
+            }
+
+            con.Close();
+        }
         private void btnBack_Click(object sender, EventArgs e)
         {
             delete();
             this.Hide();
             SalesForm form = new SalesForm();
             form.ShowDialog();
+        }
+
+        public void LoadChange()
+        {
+            int cash;
+            cash = int.Parse(textBxCash.Text);
+            int GrandTotal;
+            GrandTotal = int.Parse(txtBxGrandTotal.Text);
+            int change;
+            change = GrandTotal - cash;
+            string total1 = Convert.ToString(change);
+            txtBxGrandTotal.Text = total1;
+        }
+
+        private void textBxCash_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Bitmap imagebmp = new Bitmap(dgvReceipt.Width, dgvReceipt.Height);
+            dgvReceipt.DrawToBitmap(imagebmp, new Rectangle(0, 0, dgvReceipt.Width, dgvReceipt.Height));
+            e.Graphics.DrawImage(imagebmp, 120, 0);
+            delete();
+        }
+        
+
+
+        private void ReceiptForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
