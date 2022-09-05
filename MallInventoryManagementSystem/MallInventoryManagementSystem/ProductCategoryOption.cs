@@ -22,7 +22,7 @@ namespace MallInventoryManagementSystem
         private void buttonProducts_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            ManageCategories fm = new ManageCategories();
+            ManageProducts fm = new ManageProducts();
             fm.ShowDialog();
         }
 
