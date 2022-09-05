@@ -63,7 +63,7 @@ namespace MallInventoryManagementSystem
                     cm = new SqlCommand("DELETE FROM ProductTb WHERE pid LIKE '" + dgvProducts.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
                     cm.ExecuteNonQuery();
                     con.Close();
-                    MessageBox.Show("User has been succesfully deleted!");
+                    MessageBox.Show("Product has been succesfully deleted!");
                 }
             }
             LoadProduct();
